@@ -48,14 +48,11 @@ const MovieSchema = new mongoose.Schema({
             ], 
         },
 
-    isOnNetflix: { type: Boolean },
+    isOnNetflix: {
         type: Boolean,
         default: false
     },
-
-    coverArtUrl: { 
-        type: String
-        },
+    coverArtUrl: { type: String }
 
 }, { timestamps: true }); // need it! this is the options of the Schema, required
 
